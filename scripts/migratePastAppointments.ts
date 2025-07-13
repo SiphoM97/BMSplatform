@@ -57,5 +57,6 @@ export default function MigratePastAppointments() {
     migrate();
   }, []);
 
-  return <p className="p-4">⏳ Migrating past appointments... Check console for result.</p>;
+//   return <p className="p-4">⏳ Migrating past appointments... Check console for result.</p>;
+// }
 }
