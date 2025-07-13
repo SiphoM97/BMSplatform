@@ -5,13 +5,22 @@ import { useEffect, useState } from "react";
 import { createClient } from "@supabase/supabase-js";
 import { Icon } from "@iconify/react";
 
+type Appointment = {
+  id: number;
+  date: string;
+  time: string;
+  full_name: string;
+  status: string;
+  notes: string;
+};
+
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 );
 
 export default function DashboardPage() {
-  const [appointments, setAppointments] = useState([]);
+  const [appointments, setAppointments] = useState<Appointment[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -112,7 +121,7 @@ export default function DashboardPage() {
   );
 }
 
-// ✅ Updated Stat Card with icon and optional comparison
+// ✅ Stat Card Component
 function StatCard({
   title,
   value,
@@ -140,7 +149,7 @@ function StatCard({
   );
 }
 
-// 🛠️ Reusable Action Button
+// 🛠️ Action Button Component
 function ActionButton({ href, label }: { href: string; label: string }) {
   return (
     <a

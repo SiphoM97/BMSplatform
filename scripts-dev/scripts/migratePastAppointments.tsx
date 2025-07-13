@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { createClient } from "@supabase/supabase-js";
 
+// Initialize Supabase client
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
@@ -57,6 +58,9 @@ export default function MigratePastAppointments() {
     migrate();
   }, []);
 
-//   return <p className="p-4">⏳ Migrating past appointments... Check console for result.</p>;
-// }
+  return (
+    <p className="p-4">
+      ⏳ Migrating past appointments... Check console for result.
+    </p>
+  );
 }
