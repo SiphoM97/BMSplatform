@@ -1,0 +1,6 @@
+# Ignore development-only scripts
+scripts-dev/scripts/MigratePastAppointments.tsx
+
+# Other common ignores
+.env*
+node_modules
