@@ -33,7 +33,13 @@ export default function DashboardPage() {
       .select("*")
       .order("date", { ascending: false });
 
-    if (data) setAppointments(data);
+    if (error) {
+      console.error("Error fetching appointments:", error.message);
+      setLoading(false);
+      return;
+    }
+
+    setAppointments(data as Appointment[]);
     setLoading(false);
   };
 
