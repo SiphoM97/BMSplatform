@@ -41,7 +41,13 @@ export default function PatientsPage() {
       new Map(combined.map((p) => [p.phone_number, p])).values()
     );
 
-    const sorted = unique.sort((a, b) =>
+    const withIds: Patient[] = unique.map((p, index) => ({
+      id: `${p.phone_number || p.full_name || index}`, // fallback if phone number is missing
+      full_name: p.full_name,
+      phone_number: p.phone_number,
+    }));
+
+    const sorted = withIds.sort((a, b) =>
       a.full_name.localeCompare(b.full_name)
     );
 
@@ -89,7 +95,7 @@ export default function PatientsPage() {
             <tbody>
               {filteredPatients.map((p) => (
                 <tr
-                  key={p.phone_number}
+                  key={p.id}
                   onClick={() => handleRowClick(p.phone_number)}
                   className="cursor-pointer border-t hover:bg-blue-50 transition"
                 >
