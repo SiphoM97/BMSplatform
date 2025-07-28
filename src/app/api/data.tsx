@@ -159,7 +159,7 @@ export const TestimonialData: { profession: string; comment: string; imgSrc: str
   {
     name: "Karl Van Rensburg",
     profession: "Student, Cape Town",
-    comment: "As a first-time patient, I felt very comfortable. Thank you to Dr Nkuna and partners for the great service.",
+    comment: "As a first-time patient, I felt very comfortable. Thank you to Cure Interheath centre for the great service.",
     imgSrc: '/images/mentor/user3.png',
     rating: 5
   },

@@ -31,8 +31,9 @@ const Header: React.FC = () => {
         
         {/* Text Logo */}
         <Link href="/">
-          <h1 className="text-2xl font-bold text-primary">Dr Nkuna & Partners</h1>
-        </Link>
+  <h1 className="text-2xl font-bold text-primary">Bophelong Medical Suites</h1>
+</Link>
+
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex gap-8 items-center">

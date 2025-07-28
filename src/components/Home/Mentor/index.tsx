@@ -8,18 +8,18 @@ import { getImagePrefix } from "@/utils/util";
 
 const DoctorData = [
     {
-        name: "Dr M.A Nkuna",
-        profession: "General Practitioner (PR No: 0548561)",
+        name: "Dr M Science ",
+        profession: "General Practitioner  (PR No: 0034372)",
         imgSrc: "images/mentor/user1Doctor.png", // Replace image paths later
     },
     {
-        name: "Mr F.S Nkuna",
-        profession: "Physiotherapist (PR No: 059434)",
+        name: "Mr ZM Zuma",
+        profession: "Physiotherapist (PR No: 0592344)",
         imgSrc: "images/mentor/user1Doctor2.png",
     },
     {
-        name: "Dr C.F Dlulda",
-        profession: "General Practitioner (PR No: 0324841)",
+        name: "Dr Maths",
+        profession: "General Practitioner (PR No: 03324356)",
         imgSrc: "images/mentor/user1Doctor3.png",
     },
 ];

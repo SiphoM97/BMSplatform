@@ -8,7 +8,7 @@ import BookingForm from "@/components/Home/BookingForm";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Dr Nkuna and Partners",
+  title: "Bophelong medical suites",
 };
 
 export default function Home() {

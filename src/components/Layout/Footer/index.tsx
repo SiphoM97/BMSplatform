@@ -9,7 +9,7 @@ const footer = () => {
         <div className="grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
           {/* Clinic Name and Socials */}
           <div className="col-span-4 md:col-span-12 lg:col-span-4">
-            <h1 className="text-2xl font-bold text-primary mb-4">Dr Nkuna & Partners</h1>
+            <h1 className="text-2xl font-bold text-primary mb-4">Bophelong Medical Suites</h1>
             <div className="flex items-center gap-4">
               <Link href="#" className="hover:text-primary text-black text-3xl">
                 <Icon icon="tabler:brand-facebook" />

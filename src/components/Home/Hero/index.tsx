@@ -10,7 +10,7 @@ const Hero = () => {
                     {/* TEXT SECTION */}
                     <div className='col-span-6 flex flex-col gap-8'>
                         <h1 className='text-midnight_text text-4xl sm:text-5xl font-semibold'>
-                            Welcome to Dr. Nkuna & Partners
+                            Welcome to Bophelong medical Suites
                         </h1>
                         <h3 className='text-black/70 text-lg'>
                             Compassionate, professional healthcare you can trust. Book your appointment today.
