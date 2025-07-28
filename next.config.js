@@ -4,10 +4,10 @@ const isProd = process.env.NODE_ENV === "production";
 const nextConfig = {
   basePath: isProd ? "/E-learning" : "",
   assetPrefix: isProd ? "/E-learning/" : "",
-  // output: "export",  <-- remove or comment out this line
+  output: "export", // Enable static site export for Netlify
   images: {
-    unoptimized: true,
+    unoptimized: true, // Required for static export compatibility
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
